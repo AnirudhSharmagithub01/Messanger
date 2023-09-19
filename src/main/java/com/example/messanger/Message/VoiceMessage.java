@@ -9,8 +9,8 @@ public class VoiceMessage extends Message {
     /**
      * 
      */
-    VoiceMessage() {
-
+    public VoiceMessage() {
+        super();
         setMessageType(MessageType.VOICE);
     }
 

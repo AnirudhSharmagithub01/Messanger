@@ -9,6 +9,11 @@ public class Message {
     private MessageStatus messageStatus;
     private MessageType messageType;
 
+    public Message() {
+        System.out.println("I am inside the default Constructor");
+        this.messageStatus = MessageStatus.SENT;
+    }
+
     // Getter
     public String getMessageId(){
         return messageId;
@@ -66,5 +71,6 @@ public class Message {
         return "\n Message [ \n MessageContent= "+ messageContent +"\n messageId= "+ messageId +
         "\n messageStatus= "+ messageStatus +"\n receivedId= "+receiverId+"\n senderId= "+senderId+"]";
     }
+  
 
 }

@@ -4,8 +4,8 @@ public class TextMessage extends Message {
 
     private String textMessageContent;
 
-    TextMessage() {
-        // super();
+    public TextMessage() {
+        super();
         setMessageType(MessageType.TEXT);
     }
 

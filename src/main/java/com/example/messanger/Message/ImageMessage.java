@@ -6,7 +6,8 @@ public class ImageMessage extends Message {
     private String imageResolution;
     private String imageMetaData;
 
-    ImageMessage() {
+    public ImageMessage() {
+        super();
         setMessageType(MessageType.IMAGE);
     }
 
